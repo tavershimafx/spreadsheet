@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/office-ui-fabric-core/11.1.0/css/fabric.min.css");
+@font-face{
+    src: url("./assets/fonts/MaterialSymbolsOutlined-Regular.ttf");
+    font-family: "MaterialSymbols";
+}
+
+@font-face{
+    src: url("./assets/fonts/Roboto-Thin.ttf");
+    font-family: "Roboto-Thin";
+}
+
+@font-face{
+    src: url("./assets/fonts/Roboto-Light.ttf");
+    font-family: "Roboto-Light";
+}
+
+@font-face{
+    src: url("./assets/fonts/Roboto-Regular.ttf");
+    font-family: "Roboto-Regular";
+}
+
+@font-face{
+    src: url("./assets/fonts/Roboto-Medium.ttf");
+    font-family: "Roboto-Medium";
+}
+
+@font-face{
+    src: url("./assets/fonts/Roboto-Bold.ttf");
+    font-family: "Roboto-Bold";
+}
+
+:root{
+    --dark-green: #107c41;
+    --mild-green: #c6efce;
+    --light-green: #c6efce;
+
+    --dark-blue: #107c41;
+    --mild-blue: #4472c4;
+    --light-blue: #c6efce;
+
+    --dark-red: #ffc7ce;
+    --mild-red: #c6efce;
+    --light-red: #ffc7ce;
+
+    --background: #FFFFFF;
+    --grey: #f0f0f0;
+    --dark-grey: #d9d9d9;
+    --text-color: #242424;
+    --cell-border: #b8b8b8;
+    --border-color: #d9d9d9;
+    --menu-hover: #f5f5f5;
+    --menu-background: #fcfcfc;
+}
+
+*{
+    color: var(--text-color);
+    font-family: "Roboto-Regular";
+    font-size: 13px;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+.abb{
+    color: rgb(16, 124, 65);
+    color: rgb(16, 124, 65);
+    color: rgb(16, 124, 65);
+    color: rgb(16, 124, 65);
+    color: rgb(16, 124, 65);
+    color: rgb(16, 124, 65);
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}

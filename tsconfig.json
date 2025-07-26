@@ -21,7 +21,12 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@directives/*": ["./src/app/directives/*"],
+      "@models/*": ["./src/app/models/*"],
+      "@pages/*": ["./src/app/pages/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

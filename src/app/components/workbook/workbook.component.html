@@ -1,0 +1,47 @@
+<div class="workbook">
+    <div class="formula-arena">
+        <div class="current-cell">
+            <input type="text" class="">
+            <i class="ms-Icon ms-Icon--ChevronDown" aria-hidden="true"></i>
+        </div>
+        <span class="divide-more"><i class="ms-Icon ms-Icon--MoreVertical" aria-hidden="true"></i></span>
+        <div class="functions">
+            <i class="ms-Icon ms-Icon--Cancel" aria-hidden="true"></i>
+            <i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i>
+            <i aria-hidden="true">fx</i>
+        </div>
+        <div class="cell-formula">
+            <input type="text" class="">
+            <i class="ms-Icon ms-Icon--ChevronDown" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="table-surface">
+        <div class="table-container">
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th class="shard"></th>
+                        <th class="label" *ngFor="let cell of workbook.worksheets![0].rows![0].cells" (click)="highlightCol(workbook.worksheets![0].id, cell.col)">{{cell.col}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let row of workbook.worksheets![0].rows" class="{{row.isHighlighted? 'highlight' : ''}}">
+                        <td class="row-head" (click)="highlightRow(workbook.worksheets![0].id, row.id)">{{row.id}}</td>
+                        <td *ngFor="let cell of row.cells" class="cell"
+                        [ngClass]="{'active' :cell.active,'high-col' : cell.col == workbook.worksheets![0].highlightedCol,
+                            'high-cell': cell.highlighted
+                        }" 
+                        (click)="cellClicked(workbook.worksheets![0].id, row.id, cell.id)"
+                        (mousedown)="startMouseDown(workbook.worksheets![0].id, row.id, cell.id)"
+                        (mouseup)="mouseUp(workbook.worksheets![0].id, row.id, cell.id)"
+                        (mouseover)="mouseOverCell(workbook.worksheets![0].id, row.id, cell.id)"
+                        >
+                            <!-- <input type="text" [tabindex]="i"> -->
+                             <div class="cell-data">{{cell.id}}</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

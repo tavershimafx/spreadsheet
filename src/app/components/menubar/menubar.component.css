@@ -1,0 +1,52 @@
+.menubar{
+    padding: 0 10px;
+    background-color: var(--grey);
+}
+
+.menubar .menu{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.menubar .menu .item{
+    margin-right: 5px;
+    margin-bottom: 3px;
+    padding: 0 5px;
+    cursor: default;
+}
+
+.menubar .menu .item span{
+    display: block;
+    padding: 10px 3px 5px 3px;
+    color: var(--text-color);
+    border-bottom: 2px solid transparent;
+}
+
+.menubar .menu .item.active span{
+    font-family: "Roboto-Medium";
+    border-bottom: 2px solid var(--dark-green);
+}
+
+.menubar .menu .item:not(.active) span:hover{
+    border-bottom: 2px solid var(--dark-grey);
+}
+
+.menubar .items-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px 10px 3px 10px;
+    height: 112px;
+    border-radius: 10px;
+    background-color: var(--menu-background);
+}
+
+.menubar .items-container > .group-item{
+    display: inline-block;
+}
+
+.menubar .items-container > div:not(:last-child){
+    border-right: 1px solid var(--border-color);
+}

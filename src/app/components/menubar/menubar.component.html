@@ -1,0 +1,20 @@
+<div class="menubar">
+    <div class="menu">
+        <div *ngFor="let item of menuItems; let i = index" class="item {{i == 1? 'active' : ''}}">
+            <span>{{item.name}}</span>
+        </div>
+    </div>
+    
+    <div class="items-container">
+        <clipboard-menu></clipboard-menu>
+        <div class="items-group font-items">
+           <div>
+            
+           </div>
+            <div class="group-title">
+                <p>Font</p>
+                <i class="ms-Icon ms-Icon--ArrowDownRight8" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>

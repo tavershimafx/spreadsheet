@@ -1,0 +1,105 @@
+.clipboard-items .paste{
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: default;
+}
+
+.clipboard-items .paste:hover{
+    border: 1px solid var(--border-color);
+}
+
+.clipboard-items .paste:hover i.ms-Icon--Paste{
+    border-bottom: 1px solid var(--border-color);
+}
+
+.clipboard-items .paste i.ms-Icon--Paste{
+    padding: 0 5px;
+    font-size: 31px;
+    border-bottom: 1px solid transparent;
+}
+
+.clipboard-items .paste i.ms-Icon--Paste:hover{
+    background-color: var(--menu-hover);
+}
+
+.clipboard-items .paste > div{
+    padding: 0 5px;
+    text-align: center;
+}
+
+.clipboard-items .paste > div:hover{
+    background-color: var(--menu-hover);
+}
+
+.clipboard-items .paste .txt{
+    display: block;
+    font-size: 12px;
+    padding-top: 3px;
+}
+
+.clipboard-items .paste > div i{
+    font-size: 7px;
+    padding-bottom: 7px;
+}
+
+.clipboard-items .others{
+    display: inline-block;
+}
+
+.clipboard-items .others > div{
+    display: block;
+    width: fit-content;
+    max-height: 25px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    cursor: default;
+    margin-bottom: 2px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.clipboard-items .others > div:hover{
+    background-color: var(--menu-hover);
+}
+
+.clipboard-items .others i.ms-Icon:first-child{
+    font-size: 16px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.clipboard-items .others > div.copy-formatting{
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.clipboard-items .others .copy-formatting:hover{
+    border: 1px solid var(--border-color);
+    background-color: var(--menu-background);
+}
+
+.clipboard-items .others .copy-formatting span{
+    padding: 5px 10px 5px 5px;
+    font-size: 12px;
+}
+
+.clipboard-items .others .copy-formatting span:hover,
+.clipboard-items .others .copy-formatting span:hover i{
+    background-color: var(--menu-hover);
+}
+
+.clipboard-items .others .copy-formatting i.ms-Icon--ChevronDown{
+    padding: 8px;
+    font-size: 7px;
+}
+
+.clipboard-items .others .copy-formatting:hover i.ms-Icon--ChevronDown{
+    border-left: 1px solid var(--border-color);
+}
+
+.clipboard-items .others .copy-formatting i.ms-Icon--ChevronDown:hover{
+    background-color: var(--menu-hover);
+}
