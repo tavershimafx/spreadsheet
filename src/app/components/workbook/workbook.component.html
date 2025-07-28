@@ -21,20 +21,23 @@
                 <thead>
                     <tr>
                         <th class="shard"></th>
-                        <th class="label" *ngFor="let cell of workbook.worksheets![0].rows![0].cells" (click)="highlightCol(workbook.worksheets![0].id, cell.col)">{{cell.col}}</th>
+                        <th class="label" *ngFor="let cell of workbook.worksheets![0].rows![0].cells" (click)="highlightCol(cell.col)">{{cell.col}}</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <div class="v-lighter" #lighter>
+                        <div class="sll"></div>
+                    </div>
                     <tr *ngFor="let row of workbook.worksheets![0].rows" class="{{row.isHighlighted? 'highlight' : ''}}">
-                        <td class="row-head" (click)="highlightRow(workbook.worksheets![0].id, row.id)">{{row.id}}</td>
+                        <td class="row-head" (click)="highlightRow(row.id)">{{row.id}}</td>
                         <td *ngFor="let cell of row.cells" class="cell"
-                        [ngClass]="{'active' :cell.active,'high-col' : cell.col == workbook.worksheets![0].highlightedCol,
-                            'high-cell': cell.highlighted
+                        [ngClass]="{'high-col' : cell.col == workbook.worksheets![0].highlightedCol,
+                            'hbg': cell.highlighted
                         }" 
-                        (click)="cellClicked(workbook.worksheets![0].id, row.id, cell.id)"
-                        (mousedown)="startMouseDown(workbook.worksheets![0].id, row.id, cell.id)"
-                        (mouseup)="mouseUp(workbook.worksheets![0].id, row.id, cell.id)"
-                        (mouseover)="mouseOverCell(workbook.worksheets![0].id, row.id, cell.id)"
+                        (click)="cellClicked($event, row.id, cell.id)"
+                        (mousedown)="startMouseDown($event, row.id, cell.col)"
+                        (mouseup)="mouseUp($event, row.id, cell.col)"
+                        (mouseover)="mouseOverCell($event)"
                         >
                             <!-- <input type="text" [tabindex]="i"> -->
                              <div class="cell-data">{{cell.id}}</div>

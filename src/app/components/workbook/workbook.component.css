@@ -103,6 +103,7 @@ table{
     width: 100%;
     border-spacing: 0;
     border-collapse: collapse;
+    z-index: 10;
     background-color: var(--background);
 }
 
@@ -118,6 +119,10 @@ table thead .label{
     background-color: var(--grey);
     text-transform: uppercase;
     border-right: 1px solid var(--cell-border);
+}
+
+table, table head{
+    /* position: relative; */
 }
 
 table tr.highlight{
@@ -145,7 +150,7 @@ table tr td.high-col:not(:first-child){
     background-color: var(--grey);
 }
 
-table tr td.high-cell{
+table tr td.hbg{
     background-color: var(--grey);
 }
 
@@ -154,6 +159,10 @@ table tr td.high-cell{
     text-align: center;
     border-bottom: 1px solid var(--border-color);
     background-color: var(--grey);
+    user-select: none;     
+    -webkit-user-select: none;
+    -moz-user-select: none;   
+    -ms-user-select: none;  
 }
 
 .cell{
@@ -177,5 +186,25 @@ table tr td.high-cell{
     padding: 3px;
     height: 100%;
     width: 60px;
-    overflow: hidden;
+    overflow: hidden;   
+    user-select: none;     
+    -webkit-user-select: none;
+    -moz-user-select: none;   
+    -ms-user-select: none;    
+}
+
+.v-lighter{
+    position: absolute;
+    border: 2px solid var(--dark-green);
+    pointer-events: none;
+    background-color: #0000001a;
+}
+
+.v-lighter .sll{
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    border: 2px solid var(--dark-green);
+    bottom: 0;
+    right: 0;
 }
