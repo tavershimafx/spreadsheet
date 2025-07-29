@@ -1,0 +1,53 @@
+.select{
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+}
+
+.select .current{
+    display: flex;
+    text-align: right;
+    overflow: hidden;
+}
+
+.select .current input{
+    outline: none;
+    width: 100%;
+    border: none;
+    padding: 4px 3px;
+    flex-grow: 1;
+    font-size: 12px;
+    border-radius: 5px;
+    color: var(--black);
+}
+
+.select .current i{
+    padding: 7px 5px;
+    font-size: 7px;
+    border-radius: 0 5px 5px 0;
+}
+
+.select .current:hover i{
+    background-color: var(--menu-hover);
+}
+
+.select .items{
+    position: absolute;
+    outline: none;
+    top: 100%;
+    width: max-content;
+    max-height: 60vh;
+    overflow-y: auto;
+    z-index: 10;
+    visibility: collapse;
+    background-color: var(--background);
+    border: 1px solid var(--black);
+}
+
+.select .items.hide{
+    visibility: collapse !important;
+}
+
+.select .items.show{
+    visibility: visible !important;
+}

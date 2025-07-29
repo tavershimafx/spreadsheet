@@ -1,0 +1,47 @@
+<div class="items-group font-items">
+    <div class="direct-flow">
+        <div class="font-transform">
+            <textselect class="font-family">
+                <div class="heading">Theme Fonts</div>
+                <div class="item">Arial</div>
+                <div class="heading">All Fonts</div>
+                <div class="item" *ngFor="let font of loadedFonts">{{font.value}}</div>
+            </textselect>
+            <textselect class="font-size">
+                <div class="item" *ngFor="let size of fontSizes">{{size.value}}</div>
+            </textselect>
+        </div>
+        <div class="case-transform">
+            <span class="mni"><i class="ms-Icon ms-Icon--FontIncrease" aria-hidden="true"></i></span>
+            <span class="mni"><i class="ms-Icon ms-Icon--FontDecrease" aria-hidden="true"></i></span>
+        </div>
+        <div class="style-transform">
+            <span class="mni"><i class="ms-Icon ms-Icon--Bold" aria-hidden="true"></i></span>
+            <span class="mni"><i class="ms-Icon ms-Icon--Italic" aria-hidden="true"></i></span>
+            <span class="group-mni">
+                <span><i class="ms-Icon ms-Icon--Underline" aria-hidden="true"></i></span>
+                <i class="ms-Icon ms-Icon--ChevronDown" aria-hidden="true"></i>
+            </span>
+        </div>
+        <div class="border-transform">
+            <span class="group-mni">
+                <span><i class="ms-Icon ms-Icon--SelectAll" aria-hidden="true"></i></span>
+                <i class="ms-Icon ms-Icon--ChevronDown" aria-hidden="true"></i>
+            </span>
+        </div>
+        <div class="color-transform">
+            <span class="group-mni">
+                <span><i class="ms-Icon ms-Icon--BucketColor" aria-hidden="true"></i></span>
+                <i class="ms-Icon ms-Icon--ChevronDown" aria-hidden="true"></i>
+            </span>
+            <span class="group-mni">
+                <span><i class="ms-Icon ms-Icon--HalfAlpha" aria-hidden="true"></i></span>
+                <i class="ms-Icon ms-Icon--ChevronDown" aria-hidden="true"></i>
+            </span>
+        </div>
+    </div>
+    <div class="group-title">
+        <p>Font</p>
+        <i class="ms-Icon ms-Icon--ArrowDownRight8" aria-hidden="true"></i>
+    </div>
+</div>

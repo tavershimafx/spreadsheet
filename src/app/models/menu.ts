@@ -9,3 +9,8 @@ export interface MenuItem{
     name: string;
     //children: string
 }
+
+export interface IOption{
+    key: any
+    value: string
+}

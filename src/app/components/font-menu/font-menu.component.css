@@ -1,0 +1,67 @@
+
+.font-items {
+    max-width: 255px;
+}
+
+.font-items .direct-flow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 17px;
+    padding-left: 5px;
+}
+
+.font-family{
+    display: inline-block;
+    width: 120px;
+    margin-right: 3px;
+}
+
+.font-family div{
+    width: 100%;
+}
+
+.font-family .heading{
+    font-family: "Roboto-Medium";
+}
+
+.font-family div,
+.font-size div{
+    padding: 8px 10px;
+}
+
+.font-family div.item:hover,
+.font-size div.item:hover{
+    background-color: var(--menu-hover);
+}
+
+.font-size{
+    display: inline-block;
+    max-width: 50px;
+}
+
+.font-items .font-transform,
+.font-items .case-transform{
+    margin-right: 5px;
+    margin-top: 7px;
+}
+
+.font-items .color-transform{
+    margin-top: 7px;
+}
+
+.font-items .style-transform,
+.font-items .border-transform{
+    margin-top: 7px;
+    margin-right: 5px;
+    border-right: 1px solid var(--border-color);
+}
+
+
+.ms-Icon.ms-Icon--BucketColor{
+    border-bottom: 4px solid blue;
+}
+
+.ms-Icon.ms-Icon--HalfAlpha{
+    border-bottom: 4px solid red;
+}

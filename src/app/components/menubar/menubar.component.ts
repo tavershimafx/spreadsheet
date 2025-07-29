@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Menu } from '@models/menu';
+import { IOption, Menu } from '@models/menu';
 
 @Component({
   selector: 'menubar',

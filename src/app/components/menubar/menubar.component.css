@@ -43,10 +43,3 @@
     background-color: var(--menu-background);
 }
 
-.menubar .items-container > .group-item{
-    display: inline-block;
-}
-
-.menubar .items-container > div:not(:last-child){
-    border-right: 1px solid var(--border-color);
-}

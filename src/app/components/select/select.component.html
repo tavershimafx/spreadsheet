@@ -1,0 +1,9 @@
+<div class="select {{cssClass}}">
+    <div class="current">
+        <input type="text" [ngModel]="selectedItem?.value" (ngModelChange)="setKey($event)" [ngModelOptions]="{ standalone: true }">
+        <i class="ms-Icon ms-Icon--ChevronDown" aria-hidden="true" (click)="drop()"></i>
+    </div>
+    <div class="items {{showDropdown == true? 'show' : 'hide'}}" tabindex="-1" #items (blur)="closeItems()">
+        <ng-content />
+    </div>
+</div>

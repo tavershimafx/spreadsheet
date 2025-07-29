@@ -1,14 +1,19 @@
 
 .items-group{
+    position: relative;
     padding-right: 5px;
+}
+
+.group-title{
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    margin: 0;
 }
 
 .group-title p{
     display: inline-block;
-    position: relative;
     width: 90%;
-    bottom: 0;
-    text-align: center;
     font-size: 11px;
     margin: 0;
 }
@@ -18,4 +23,90 @@
     bottom: 0;
     right: 0;
     font-size: 8px;
+}
+
+.items-group{
+    border-right: 1px solid var(--border-color);
+}
+
+.mni{
+    display: inline-block;
+    width: fit-content;
+    height: 26px;
+    padding: 4px 5px;
+    margin-right: 3px;
+    border-radius: 5px;
+}
+
+span.mni i{
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.mni:hover{
+    background-color: var(--menu-hover);
+}
+
+.group-mni{
+    display: inline-block;
+    padding: 0;
+    margin-right: 3px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.group-mni:hover{
+    border: 1px solid var(--border-color);
+    background-color: var(--menu-background);
+}
+
+.group-mni span{
+    padding: 5px;
+    font-size: 12px;
+}
+
+.group-mni span span{
+    margin-left: 3px;
+}
+
+.group-mni span i{
+    vertical-align: middle;
+}
+
+.group-mni span:hover,
+.group-mni span:hover i{
+    background-color: var(--menu-hover);
+}
+
+.group-mni i.ms-Icon--ChevronDown{
+    padding: 8px 3px;
+    font-size: 7px;
+}
+
+.group-mni:hover i.ms-Icon--ChevronDown{
+    border-left: 1px solid var(--border-color);
+}
+
+.group-mni i.ms-Icon--ChevronDown:hover{
+    background-color: var(--menu-hover);
+}
+
+.mni-badge{
+    display: block;
+    width: fit-content;
+    padding: 3px 5px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.mni-badge:hover{
+    background-color: var(--menu-hover);
+}
+
+.mni-badge i.ms-Icon{
+    font-size: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
 }
