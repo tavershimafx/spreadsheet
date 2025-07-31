@@ -8,7 +8,7 @@ import { IOption, Menu } from '@models/menu';
   styleUrls: ['../menu-items.css', './menubar.component.css']
 })
 export class MenubarComponent {
-  activeMenu = 0
+  activeMenu = 1
 
   menuItems: Menu[] = [ 
     { id: 1, name: "File" },
