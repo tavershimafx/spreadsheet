@@ -1,0 +1,8 @@
+.items-group.charts-items .align-half .mni-badge{
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.items-group.charts-items .align-half.types{
+    max-width: 150px;
+}

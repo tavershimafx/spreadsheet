@@ -5,7 +5,7 @@ import { IOption } from '@models/menu';
   selector: 'font-menu',
   standalone: false,
   templateUrl: './font-menu.component.html',
-  styleUrls: ['../menu-items.css', './font-menu.component.css']
+  styleUrls: ['../../menu-items.css', './font-menu.component.css']
 })
 export class FontMenuComponent {
 

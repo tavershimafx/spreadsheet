@@ -2,14 +2,6 @@
     max-width: 320px;
 }
 
-.items-group.alignment-items .cask{
-    display: flex;
-}
-
-.items-group.alignment-items .align-half{
-    flex-grow: 1;
-}
-
 .items-group.alignment-items .align-half:first-child,
 .items-group.alignment-items .align-transform .vertical,
 .items-group.alignment-items .align-transform .horizontal{

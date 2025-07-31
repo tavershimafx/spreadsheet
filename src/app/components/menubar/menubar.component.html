@@ -1,18 +1,32 @@
 <div class="menubar">
     <div class="menu">
-        <div *ngFor="let item of menuItems; let i = index" class="item {{i == 1? 'active' : ''}}">
+        <div *ngFor="let item of menuItems; let i = index" 
+        class="item {{i == activeMenu? 'active' : ''}}"
+        (click)="selectMenu(i)">
             <span>{{item.name}}</span>
         </div>
     </div>
 
-    <div class="items-container">
-        <clipboard-menu></clipboard-menu>
-        <font-menu></font-menu>
-        <alignment-menu></alignment-menu>
-        <number-menu></number-menu>
-        <styles-menu></styles-menu>
-        <cells-menu></cells-menu>
-        <editing-menu></editing-menu>
-        <adins-menu></adins-menu>
+    <div class="group-container">
+         <div class="items-container" *ngIf="activeMenu == 1">
+            <clipboard-menu></clipboard-menu>
+            <font-menu></font-menu>
+            <alignment-menu></alignment-menu>
+            <number-menu></number-menu>
+            <styles-menu></styles-menu>
+            <cells-menu></cells-menu>
+            <editing-menu></editing-menu>
+            <adins-menu> </adins-menu>
+        </div>
+        <div class="items-container" *ngIf="activeMenu == 2">
+            <tables-menu></tables-menu>
+            <illustrations-menu></illustrations-menu>
+            <charts-menu></charts-menu>
+            <sparklines-menu></sparklines-menu>
+            <filters-menu></filters-menu>
+            <links-menu></links-menu>
+            <text-menu></text-menu>
+            <symbols-menu></symbols-menu>
+        </div>
     </div>
 </div>

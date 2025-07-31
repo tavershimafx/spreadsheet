@@ -29,6 +29,14 @@
     border-right: 1px solid var(--border-color);
 }
 
+.items-group .cask{
+    display: flex;
+}
+
+.items-group .align-half{
+    flex-grow: 1;
+}
+
 .mni{
     display: inline-block;
     width: fit-content;

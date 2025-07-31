@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { IOption, Menu } from '@models/menu';
+import { IOption } from '@models/menu';
 
 @Component({
   selector: 'adins-menu',
   standalone: false,
   templateUrl: './adins-menu.component.html',
-  styleUrls: ['../menu-items.css', './adins-menu.component.css']
+  styleUrls: ['../../menu-items.css', './adins-menu.component.css']
 })
 export class AdinsMenuComponent {
 
