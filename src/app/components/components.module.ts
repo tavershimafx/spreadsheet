@@ -11,6 +11,8 @@ import { NumberMenuComponent } from "./number-menu/number-menu.component";
 import { StylesMenuComponent } from "./styles-menu/styles-menu.component";
 import { AlignmentMenuComponent } from "./alignment-menu/alignment-menu.component";
 import { CellsMenuComponent } from "./cells-menu/cells-menu.component";
+import { EditingMenuComponent } from "./editing-menu/editing-menu.component";
+import { AdinsMenuComponent } from "./adins-menu/adins-menu.component";
 
 const components = [
     MenubarComponent,
@@ -21,7 +23,9 @@ const components = [
     AlignmentMenuComponent,
     NumberMenuComponent,
     StylesMenuComponent,
-    CellsMenuComponent
+    CellsMenuComponent,
+    EditingMenuComponent,
+    AdinsMenuComponent
 ]
 @NgModule({
     declarations: [...components],

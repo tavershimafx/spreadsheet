@@ -60,6 +60,7 @@
     font-size: 13px;
     box-sizing: border-box;
     cursor: default;
+    scrollbar-width: thin;
 }
 
 .abb{

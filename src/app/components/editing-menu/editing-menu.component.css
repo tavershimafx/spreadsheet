@@ -1,0 +1,11 @@
+.editing-items .others{
+    display: inline-block;
+}
+
+.items-group.editing-items .cask{
+    display: flex;
+}
+
+.items-group.editing-items .align-half{
+    flex-grow: 1;
+}

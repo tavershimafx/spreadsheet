@@ -1,13 +1,14 @@
 .items-group{
     position: relative;
-    padding-right: 5px;
+    height: 100%;
+    padding: 0 5px;
 }
 
 .group-title{
     position: relative;
     bottom: 0;
-    text-align: center;
     margin: 0;
+    text-align: center;
 }
 
 .group-title p{
@@ -80,6 +81,7 @@ span.mni i{
 .group-mni i.ms-Icon--ChevronDown{
     padding: 8px 3px;
     font-size: 7px;
+    border-left: 1px solid transparent;
 }
 
 .group-mni:hover i.ms-Icon--ChevronDown{
@@ -110,6 +112,12 @@ span.mni i{
     margin-right: 5px;
 }
 
+
+.mni-badge span i.ms-Icon{
+    margin-left: 3px;
+    font-size: 7px;
+}
+
 .mni-vertical{
     display: inline-block;
     vertical-align: top;
@@ -123,12 +131,24 @@ span.mni i{
     border: 1px solid var(--border-color);
 }
 
+.mni-vertical.nb:hover{
+    background-color: var(--menu-hover);
+    border: 1px solid transparent !important;
+}
+
+.mni-vertical:hover > i.ms-Icon{
+    border-bottom: 1px solid transparent;
+}
+
 .mni-vertical:hover > i.ms-Icon{
     border-bottom: 1px solid var(--border-color);
 }
 
+.mni-vertical.nb:hover > i.ms-Icon{
+    border-bottom: 1px solid transparent;
+}
+
 .mni-vertical > i.ms-Icon{
-    /* width: -moz-available; */
     width: 100%;
     padding: 2px 5px;
     font-size: 31px;
@@ -154,7 +174,15 @@ span.mni i{
     padding-top: 3px;
 }
 
+.mni-vertical.nb .txt{
+    display: inline !important;
+}
+
 .mni-vertical > div i{
     font-size: 7px;
     padding-bottom: 7px;
+}
+
+.mni-vertical.nb > div i{
+    margin-left: 2px !important;
 }
