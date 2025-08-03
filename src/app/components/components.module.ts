@@ -23,7 +23,7 @@ import { TextMenuComponent } from "./insert/text-menu/text-menu.component";
 import { SymbolsMenuComponent } from "./insert/symbols-menu/symbols-menu.component";
 import { ConvertMenuComponent } from "./draw/convert-menu/convert-menu.component";
 import { DrawingMenuComponent } from "./draw/drawing-menu/drawing-menu.component";
-import { HelpMenuComponent } from "./draw/help-menu/help-menu.component";
+import { DrawHelpMenuComponent } from "./draw/help-menu/help-menu.component";
 import { InputMenuComponent } from "./draw/input-menu/input-menu.component";
 import { ReplayMenuComponent } from "./draw/replay-menu/replay-menu.component";
 import { ArrangeMenuComponent } from "./page-layout/arrange-menu/arrange-menu.component";
@@ -53,6 +53,7 @@ import { WindowMenuComponent } from "./view/window-menu/window-menu.component";
 import { WorkbookMenuComponent } from "./view/workbook-menu/workbook-menu.component";
 import { ZoomMenuComponent } from "./view/zoom-menu/zoom-menu.component";
 import { CommunityMenuComponent } from "./help/community-menu/community-menu.component";
+import { HelpMenuComponent } from "./help/help-menu/help-menu.component";
 
 const components = [
     MenubarComponent, ClipboardMenuComponent, WorkbookComponent,
@@ -62,7 +63,7 @@ const components = [
     IllustrationsMenuComponent, TablesMenuComponent, SparklinesMenuComponent,
     FiltersMenuComponent, LinksMenuComponent, TextMenuComponent,
     SymbolsMenuComponent, ConvertMenuComponent, DrawingMenuComponent,
-    HelpMenuComponent, InputMenuComponent, ReplayMenuComponent,
+    DrawHelpMenuComponent, InputMenuComponent, ReplayMenuComponent,
     ArrangeMenuComponent, PageMenuComponent, ScaleMenuComponent,
     SheetMenuComponent, ThemesMenuComponent, CalculationMenuComponent,
     DefinedMenuComponent, FunctionMenuComponent, FormulaMenuComponent,
