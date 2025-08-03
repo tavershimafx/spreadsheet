@@ -1,0 +1,13 @@
+.items-group.scale-items .scl{
+    display: flex;
+    justify-content: space-between;
+}
+
+.items-group.scale-items .scl .sz{
+    display: inline-block;
+    max-width: 70px;
+}
+
+.items-group.scale-items .scl .mni i{
+    margin-right: 3px;
+}

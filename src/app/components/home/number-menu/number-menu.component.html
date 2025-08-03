@@ -1,25 +1,29 @@
 <div class="items-group number-items">
-    <div class="g-num">
-       <textselect class="font-family">
-            <div class="heading">Theme Fonts</div>
-            <div class="item">Arial</div>
-            <div class="heading">All Fonts</div>
-            <div class="item" *ngFor="let font of numberStyles">{{font.value}}</div>
-        </textselect>
-    </div>
-    <div class="others">
-       <div>
-            <span class="group-mni">
-                <span><i class="" aria-hidden="true">$</i></span>
-                <i class="ms-Icon ms-Icon--ChevronDown" aria-hidden="true"></i>
-            </span>
-            <span class="mni"><i class="ms-Icon ms-Icon--CalculatorPercentage" aria-hidden="true"></i></span>
-            <span class="mni"><i class="" aria-hidden="true">&comma;</i></span>
-       </div>
-       <div>
-            <span class="mni"><i class="ms-Icon ms-Icon--Italic" aria-hidden="true"></i></span>
-            <span class="mni"><i class="ms-Icon ms-Icon--Italic" aria-hidden="true"></i></span>
-       </div>
+    <div class="cask">
+        <div>
+            <div class="g-num">
+                <textselect class="font-family">
+                    <div class="heading">Theme Fonts</div>
+                    <div class="item">Arial</div>
+                    <div class="heading">All Fonts</div>
+                    <div class="item" *ngFor="let font of numberStyles">{{font.value}}</div>
+                </textselect>
+            </div>
+            <div class="others">
+                <div>
+                    <span class="group-mni">
+                        <span><i class="" aria-hidden="true">$</i></span>
+                        <i class="ms-Icon ms-Icon--ChevronDown" aria-hidden="true"></i>
+                    </span>
+                    <span class="mni"><i class="ms-Icon ms-Icon--CalculatorPercentage" aria-hidden="true"></i></span>
+                    <span class="mni"><i class="" aria-hidden="true">&comma;</i></span>
+                </div>
+                <div>
+                    <span class="mni"><i class="ms-Icon ms-Icon--Italic" aria-hidden="true"></i></span>
+                    <span class="mni"><i class="ms-Icon ms-Icon--Italic" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="group-title">
         <p>Number</p>

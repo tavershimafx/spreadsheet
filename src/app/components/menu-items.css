@@ -1,7 +1,18 @@
 .items-group{
     position: relative;
+    display: grid;
+    align-content: space-between;
+    border-right: 1px solid var(--border-color);
     height: 100%;
     padding: 0 5px;
+}
+
+.items-group .cask{
+    display: flex;
+}
+
+.items-group .align-half{
+    flex-grow: 1;
 }
 
 .group-title{
@@ -9,6 +20,7 @@
     bottom: 0;
     margin: 0;
     text-align: center;
+    align-content: end;
 }
 
 .group-title p{
@@ -23,18 +35,6 @@
     bottom: 0;
     right: 0;
     font-size: 8px;
-}
-
-.items-group{
-    border-right: 1px solid var(--border-color);
-}
-
-.items-group .cask{
-    display: flex;
-}
-
-.items-group .align-half{
-    flex-grow: 1;
 }
 
 .mni{

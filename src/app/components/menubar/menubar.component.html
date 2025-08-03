@@ -8,6 +8,7 @@
     </div>
 
     <div class="group-container">
+        <!--Home-->
          <div class="items-container" *ngIf="activeMenu == 1">
             <clipboard-menu></clipboard-menu>
             <font-menu></font-menu>
@@ -18,6 +19,7 @@
             <editing-menu></editing-menu>
             <adins-menu> </adins-menu>
         </div>
+        <!--Insert-->
         <div class="items-container" *ngIf="activeMenu == 2">
             <tables-menu></tables-menu>
             <illustrations-menu></illustrations-menu>
@@ -27,6 +29,45 @@
             <links-menu></links-menu>
             <text-menu></text-menu>
             <symbols-menu></symbols-menu>
+        </div>
+        <!--Draw-->
+        <div class="items-container" *ngIf="activeMenu == 3">
+            <input-menu></input-menu>
+            <drawing-menu></drawing-menu>
+            <convert-menu></convert-menu>
+            <replay-menu></replay-menu>
+            <help-menu></help-menu>
+        </div>
+        <!--Page Layout-->
+        <div class="items-container" *ngIf="activeMenu == 4">
+            <themes-menu></themes-menu>
+            <page-menu></page-menu>
+            <scale-menu></scale-menu>
+            <sheet-menu></sheet-menu>
+            <arrange-menu></arrange-menu>
+        </div>
+        <!--Formulas-->
+        <div class="items-container" *ngIf="activeMenu == 5">
+            <function-menu></function-menu>
+            <defined-menu></defined-menu>
+            <formula-menu></formula-menu>
+            <calculation-menu></calculation-menu>
+        </div>
+        <!--Data-->
+        <div class="items-container" *ngIf="activeMenu == 6">
+            
+        <!--Review-->
+        </div>
+        <div class="items-container" *ngIf="activeMenu == 7">
+            
+        </div>
+        <!--View-->
+        <div class="items-container" *ngIf="activeMenu == 8">
+            
+        </div>
+        <!--Help-->
+        <div class="items-container" *ngIf="activeMenu == 9">
+            
         </div>
     </div>
 </div>

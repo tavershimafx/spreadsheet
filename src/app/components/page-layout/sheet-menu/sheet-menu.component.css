@@ -1,0 +1,10 @@
+.items-group .align-half:first-of-type{
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 1px solid var(--border-color);
+}
+
+.items-group label{
+    display: block;
+    margin: 5px 0;
+}

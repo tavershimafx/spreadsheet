@@ -1,0 +1,37 @@
+<div class="items-group scale-items">
+    <div class="cask">
+        <div>
+            <div class="scl">
+                <span class="mni"><i class="ms-Icon ms-Icon--FitWidth" aria-hidden="true"></i>Width:</span>
+                <textselect class="sz">
+                    <div class="heading">Theme Fonts</div>
+                    <div class="item">Arial</div>
+                    <div class="heading">All Fonts</div>
+                    <div class="item" *ngFor="let font of numberStyles">{{font.value}}</div>
+                </textselect>
+            </div>
+            <div class="scl">
+                <span class="mni"><i class="ms-Icon ms-Icon--AutoHeight" aria-hidden="true"></i>Height:</span>
+                <textselect class="sz">
+                    <div class="heading">Theme Fonts</div>
+                    <div class="item">Arial</div>
+                    <div class="heading">All Fonts</div>
+                    <div class="item" *ngFor="let font of numberStyles">{{font.value}}</div>
+                </textselect>
+            </div>
+            <div class="scl">
+                <span class="mni"><i class="ms-Icon ms-Icon--ScaleUp" aria-hidden="true"></i>Scale:</span>
+                <textselect class="sz">
+                    <div class="heading">Theme Fonts</div>
+                    <div class="item">Arial</div>
+                    <div class="heading">All Fonts</div>
+                    <div class="item" *ngFor="let font of numberStyles">{{font.value}}</div>
+                </textselect>
+            </div>
+        </div>
+    </div>
+    <div class="group-title">
+        <p>Scale to Fit</p>
+        <i class="ms-Icon ms-Icon--ArrowDownRight8" aria-hidden="true"></i>
+    </div>
+</div>

@@ -21,27 +21,34 @@ import { FiltersMenuComponent } from "./insert/filters-menu/filters-menu.compone
 import { LinksMenuComponent } from "./insert/links-menu/links-menu.component";
 import { TextMenuComponent } from "./insert/text-menu/text-menu.component";
 import { SymbolsMenuComponent } from "./insert/symbols-menu/symbols-menu.component";
+import { ConvertMenuComponent } from "./draw/convert-menu/convert-menu.component";
+import { DrawingMenuComponent } from "./draw/drawing-menu/drawing-menu.component";
+import { HelpMenuComponent } from "./draw/help-menu/help-menu.component";
+import { InputMenuComponent } from "./draw/input-menu/input-menu.component";
+import { ReplayMenuComponent } from "./draw/replay-menu/replay-menu.component";
+import { ArrangeMenuComponent } from "./page-layout/arrange-menu/arrange-menu.component";
+import { PageMenuComponent } from "./page-layout/page-menu/page-menu.component";
+import { ScaleMenuComponent } from "./page-layout/scale-menu/scale-menu.component";
+import { SheetMenuComponent } from "./page-layout/sheet-menu/sheet-menu.component";
+import { ThemesMenuComponent } from "./page-layout/themes-menu/themes-menu.component";
+import { CalculationMenuComponent } from "./formulas/calculation-menu/calculation-menu.component";
+import { DefinedMenuComponent } from "./formulas/defined-menu/defined-menu.component";
+import { FunctionMenuComponent } from "./formulas/function-menu/function-menu.component";
+import { FormulaMenuComponent } from "./formulas/formula-menu/formula-menu.component";
 
 const components = [
-    MenubarComponent,
-    ClipboardMenuComponent,
-    WorkbookComponent,
-    SelectComponent,
-    FontMenuComponent,
-    AlignmentMenuComponent,
-    NumberMenuComponent,
-    StylesMenuComponent,
-    CellsMenuComponent,
-    EditingMenuComponent,
-    AdinsMenuComponent,
-    ChartsMenuComponent,
-    IllustrationsMenuComponent,
-    TablesMenuComponent,
-    SparklinesMenuComponent,
-    FiltersMenuComponent,
-    LinksMenuComponent,
-    TextMenuComponent,
-    SymbolsMenuComponent
+    MenubarComponent, ClipboardMenuComponent, WorkbookComponent,
+    SelectComponent, FontMenuComponent, AlignmentMenuComponent,
+    NumberMenuComponent, StylesMenuComponent, CellsMenuComponent,
+    EditingMenuComponent, AdinsMenuComponent, ChartsMenuComponent,
+    IllustrationsMenuComponent, TablesMenuComponent, SparklinesMenuComponent,
+    FiltersMenuComponent, LinksMenuComponent, TextMenuComponent,
+    SymbolsMenuComponent, ConvertMenuComponent, DrawingMenuComponent,
+    HelpMenuComponent, InputMenuComponent, ReplayMenuComponent,
+    ArrangeMenuComponent, PageMenuComponent, ScaleMenuComponent,
+    SheetMenuComponent, ThemesMenuComponent, CalculationMenuComponent,
+    DefinedMenuComponent, FunctionMenuComponent, FormulaMenuComponent,
+    CalculationMenuComponent
 ]
 @NgModule({
     declarations: [...components],
