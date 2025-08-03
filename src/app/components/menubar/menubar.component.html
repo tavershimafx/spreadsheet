@@ -55,19 +55,34 @@
         </div>
         <!--Data-->
         <div class="items-container" *ngIf="activeMenu == 6">
-            
-        <!--Review-->
+            <transform-menu></transform-menu>
+            <queries-menu></queries-menu>
+            <sort-menu></sort-menu>
+            <data-menu></data-menu>
+            <forecast-menu></forecast-menu>
+            <outline-menu></outline-menu>
         </div>
+        <!--Review-->
         <div class="items-container" *ngIf="activeMenu == 7">
-            
+            <proofing-menu></proofing-menu>
+            <accessibility-menu></accessibility-menu>
+            <language-menu></language-menu>
+            <comments-menu></comments-menu>
+            <protect-menu></protect-menu>
+            <ink-menu></ink-menu>
         </div>
         <!--View-->
         <div class="items-container" *ngIf="activeMenu == 8">
-            
+            <workbook-menu></workbook-menu>
+            <show-menu></show-menu>
+            <zoom-menu></zoom-menu>
+            <window-menu></window-menu>
+            <macros-menu></macros-menu>
         </div>
         <!--Help-->
         <div class="items-container" *ngIf="activeMenu == 9">
-            
+            <help-menu></help-menu>
+            <community-menu></community-menu>
         </div>
     </div>
 </div>

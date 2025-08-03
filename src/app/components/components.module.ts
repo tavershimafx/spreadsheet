@@ -35,6 +35,24 @@ import { CalculationMenuComponent } from "./formulas/calculation-menu/calculatio
 import { DefinedMenuComponent } from "./formulas/defined-menu/defined-menu.component";
 import { FunctionMenuComponent } from "./formulas/function-menu/function-menu.component";
 import { FormulaMenuComponent } from "./formulas/formula-menu/formula-menu.component";
+import { DataMenuComponent } from "./data/data-menu/data-menu.component";
+import { ForecastMenuComponent } from "./data/forecast-menu/forecast-menu.component";
+import { OutlineMenuComponent } from "./data/outline-menu/outline-menu.component";
+import { QueriesMenuComponent } from "./data/queries-menu/queries-menu.component";
+import { SortMenuComponent } from "./data/sort-menu/sort-menu.component";
+import { TransformMenuComponent } from "./data/transform-menu/transform-menu.component";
+import { AccessibilityMenuComponent } from "./review/accessibility-menu/accessibility-menu.component";
+import { CommentsMenuComponent } from "./review/comments-menu/comments-menu.component";
+import { InkMenuComponent } from "./review/ink-menu/ink-menu.component";
+import { LanguageMenuComponent } from "./review/language-menu/language-menu.component";
+import { ProofingMenuComponent } from "./review/proofing-menu/proofing-menu.component";
+import { ProtectMenuComponent } from "./review/protect-menu/protect-menu.component";
+import { MacrosMenuComponent } from "./view/macros-menu/macros-menu.component";
+import { ShowMenuComponent } from "./view/show-menu/show-menu.component";
+import { WindowMenuComponent } from "./view/window-menu/window-menu.component";
+import { WorkbookMenuComponent } from "./view/workbook-menu/workbook-menu.component";
+import { ZoomMenuComponent } from "./view/zoom-menu/zoom-menu.component";
+import { CommunityMenuComponent } from "./help/community-menu/community-menu.component";
 
 const components = [
     MenubarComponent, ClipboardMenuComponent, WorkbookComponent,
@@ -48,7 +66,13 @@ const components = [
     ArrangeMenuComponent, PageMenuComponent, ScaleMenuComponent,
     SheetMenuComponent, ThemesMenuComponent, CalculationMenuComponent,
     DefinedMenuComponent, FunctionMenuComponent, FormulaMenuComponent,
-    CalculationMenuComponent
+    CalculationMenuComponent, DataMenuComponent, ForecastMenuComponent,
+    OutlineMenuComponent, QueriesMenuComponent, SortMenuComponent,
+    TransformMenuComponent, AccessibilityMenuComponent, CommentsMenuComponent,
+    InkMenuComponent, LanguageMenuComponent, ProofingMenuComponent,
+    ProtectMenuComponent, MacrosMenuComponent, ShowMenuComponent,
+    WindowMenuComponent, WorkbookMenuComponent, ZoomMenuComponent,
+    CommunityMenuComponent, HelpMenuComponent
 ]
 @NgModule({
     declarations: [...components],

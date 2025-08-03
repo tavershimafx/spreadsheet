@@ -1,0 +1,14 @@
+.items-group.formula-items .align-half:first-of-type{
+    padding-right: 5px;
+    margin-right: 5px;
+    border-right: 1px solid var(--border-color);
+}
+
+.items-group.formula-items .align-half:first-of-type :first-child{
+    padding-right: 10px;
+}
+
+.items-group.formula-items .align-half:first-of-type > div{
+    display: inline-grid;
+}
+
