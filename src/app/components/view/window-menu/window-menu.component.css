@@ -1,14 +1,26 @@
-.items-group.formula-items .align-half:first-of-type{
+.items-group.window-items .align-half:first-of-type{
     padding-right: 5px;
+    align-content: start;
+  display: inline-grid;
+  grid-auto-flow: column;
     margin-right: 5px;
     border-right: 1px solid var(--border-color);
 }
 
-.items-group.formula-items .align-half:first-of-type :first-child{
+.items-group.window-items .align-half:first-of-type > div{
+    display: inline-grid;
+    align-items: start;
+}
+
+.items-group.window-items .align-half:first-of-type :first-child{
     padding-right: 10px;
 }
 
-.items-group.formula-items .align-half:first-of-type > div{
-    display: inline-grid;
+.items-group.window-items .align-half:first-of-type > div:first-of-type{
+    grid-auto-flow: column;
+}
+
+.items-group.window-items .align-half:first-of-type > div:last-of-type{
+    grid-auto-flow: row;
 }
 

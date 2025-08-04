@@ -3,3 +3,8 @@
     padding-right: 5px;
     border-right: 1px solid var(--border-color);
 }
+
+.items-group .align-half{
+    display: grid;
+    grid-auto-flow: column;
+}
