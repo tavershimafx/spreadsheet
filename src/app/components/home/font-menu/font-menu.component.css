@@ -63,3 +63,11 @@
 .ms-Icon.ms-Icon--HalfAlpha{
     border-bottom: 4px solid red;
 }
+
+.dropmenu.sty{
+    width: 150px;
+}
+
+.dropmenu.bord{
+    width: 250px;
+}

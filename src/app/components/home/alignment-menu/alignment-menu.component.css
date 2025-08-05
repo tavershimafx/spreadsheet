@@ -22,3 +22,11 @@
 .items-group.alignment-items .align-transform .indents{
     margin-top: 8px;
 }
+
+.dropmenu.rotat{
+    width: 200px;
+}
+
+.dropmenu.merge{
+    width: 170px;
+}

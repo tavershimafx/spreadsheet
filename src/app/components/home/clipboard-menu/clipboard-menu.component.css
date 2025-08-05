@@ -1,3 +1,29 @@
 .clipboard-items .others{
     display: inline-block;
 }
+
+.dropmenu{
+    width: 150px;
+}
+
+.dropmenu .special-paste{
+    padding: 0 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dropmenu .special-paste span {
+    margin-right: 3px;
+    width: 20px;
+}
+
+.dropmenu .special-paste span i:hover {
+    background-color: var(--menu-hover);
+    border: 1px solid var(--border-color);
+}
+
+.dropmenu .special-paste span i{
+    text-align: center;
+    font-size: 24px;
+    padding: 2px;
+    border: 1px solid transparent;
+}

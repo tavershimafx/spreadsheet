@@ -2,9 +2,17 @@
     <div class="cask">
         <div class="mni-vertical">
             <i class="ms-Icon ms-Icon--Paste" aria-hidden="true"></i>
-            <div>
+            <div dropmenu>
                 <span class="txt">Paste</span>
                 <span><i class="ms-Icon ms-Icon--ChevronDown" aria-hidden="true"></i></span>
+            </div>
+            <div class="dropmenu" tabindex="0">
+                <div class="heading">Past Options</div>
+                <div class="special-paste">
+                    <span><i class="ms-Icon ms-Icon--Paste" aria-hidden="true"></i></span>
+                    <span><i class="ms-Icon ms-Icon--PasteAsText" aria-hidden="true"></i></span>
+                </div>
+                <div class="item"> <span></span><span>Paste Special...</span></div>
             </div>
         </div>
         <div class="others">
@@ -14,7 +22,17 @@
                     <i class="ms-Icon ms-Icon--Copy" aria-hidden="true"></i>
                     <span>Copy</span>
                 </span>
-                <i class="ms-Icon ms-Icon--ChevronDown" aria-hidden="true"></i>
+                <i dropmenu class="ms-Icon ms-Icon--ChevronDown" aria-hidden="true"></i>
+                <div class="dropmenu" tabindex="0">
+                    <div class="item">
+                        <span><i class="ms-Icon ms-Icon--Copy" aria-hidden="true"></i></span>
+                        <span>Copy</span>
+                    </div>
+                    <div class="item">
+                        <span></span> 
+                        <span>Copy As Picture</span> 
+                    </div>
+                </div>
             </div>
             <div class="mni-badge"><i class="ms-Icon ms-Icon--FormatPainter" aria-hidden="true"></i>Format Painter</div>
         </div>

@@ -1,3 +1,7 @@
 .editing-items .others{
     display: inline-block;
 }
+
+.dropmenu{
+    width: 200px;
+}

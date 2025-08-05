@@ -1,9 +1,11 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { CellDirective } from "./cell.directive";
+import { DropMenuDirective } from "./dropmenu.directive";
 
 const components = [
-    CellDirective
+    CellDirective,
+    DropMenuDirective
 ]
 @NgModule({
     declarations: [...components],

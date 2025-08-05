@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/office-ui-fabric-core/11.1.0/css/fabric.min.css");
+@import url("./assets/fonts/fabric.min.css");
+/* @import url("https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/office-ui-fabric-core/11.1.0/css/fabric.min.css"); */
 @font-face{
     src: url("./assets/fonts/MaterialSymbolsOutlined-Regular.ttf");
     font-family: "MaterialSymbols";

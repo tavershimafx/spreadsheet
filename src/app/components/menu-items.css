@@ -68,21 +68,21 @@ span.mni i{
     background-color: var(--menu-background);
 }
 
-.group-mni span{
+.group-mni > span{
     padding: 5px;
     font-size: 12px;
 }
 
-.group-mni span span{
+.group-mni > span span{
     margin-left: 3px;
 }
 
-.group-mni span i{
+.group-mni > span i{
     vertical-align: middle;
 }
 
-.group-mni span:hover,
-.group-mni span:hover i{
+.group-mni > span:hover,
+.group-mni > span:hover i{
     background-color: var(--menu-hover);
 }
 
@@ -127,10 +127,11 @@ span.mni i{
 }
 
 .mni-vertical{
+    position: relative;
     display: inline-block;
     vertical-align: top;
-    text-align: center;
     border-radius: 5px;
+    outline: none;
     border: 1px solid transparent;
     cursor: default;
 }
@@ -157,6 +158,7 @@ span.mni i{
 }
 
 .mni-vertical > i.ms-Icon{
+    text-align: center;
     width: 100%;
     padding: 2px 5px;
     font-size: 31px;
@@ -167,12 +169,16 @@ span.mni i{
     background-color: var(--menu-hover);
 }
 
-.mni-vertical > div{
+.mni-vertical > div:first-of-type{
     padding: 0 5px;
     text-align: center;
 }
 
-.mni-vertical > div:hover{
+.mni-vertical > div:not(.dropmenu){
+    text-align: center;
+}
+
+.mni-vertical > div:first-of-type:hover{
     background-color: var(--menu-hover);
 }
 
@@ -186,11 +192,83 @@ span.mni i{
     display: inline !important;
 }
 
-.mni-vertical > div i{
+.mni-vertical > div:first-of-type i{
     font-size: 7px;
     padding-bottom: 7px;
 }
 
-.mni-vertical.nb > div i{
+.mni-vertical.nb > div:first-of-type i{
     margin-left: 2px !important;
+}
+
+.dropmenu{
+    position: absolute;
+    width: max-content;
+    max-height: 90vh;
+    overflow-y: auto;
+    display: none;
+    visibility: collapse;
+    background-color: var(--menu-background);
+    border: 1px solid var(--black);
+    outline: none;
+    z-index: 20;
+}
+
+.dropmenu .heading{
+    font-family: "Roboto-Bold";
+    font-size: 12px;
+    padding: 7px 10px;
+}
+
+.dropmenu .item{
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 23px auto;
+    padding: 7px 10px;
+    width: 100%;
+}
+
+.dropmenu .block-item{
+    display: inline-grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-auto-columns: 35px auto;
+    padding: 3px 10px;
+    width: 100%;
+}
+
+.dropmenu .block-item > span:not(.mdm) i{
+    font-size: 32px;
+    vertical-align: middle;
+}
+
+.dropmenu .block-item span.md{
+    font-family: "Roboto-Medium";
+}
+
+.dropmenu span.mdm i{
+    font-size: 8px;
+    float: right;
+}
+
+.dropmenu .item:hover, .dropmenu .block-item:hover{
+    background-color: var(--menu-hover);
+}
+
+.dropmenu .item > span i{
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.dropmenu .hr{
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dropmenu .item > span.hr{
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dropmenu .item:has(.hr) {
+    padding: 0 10px;
 }
