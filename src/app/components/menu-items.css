@@ -203,7 +203,7 @@ span.mni i{
 
 .dropmenu{
     position: absolute;
-    width: max-content;
+    width: 200px;
     max-height: 90vh;
     overflow-y: auto;
     display: none;
