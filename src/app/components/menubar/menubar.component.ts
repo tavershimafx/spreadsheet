@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IOption, Menu } from '@models/menu';
+import { Menu } from '@models/menu';
 
 @Component({
   selector: 'menubar',
@@ -8,7 +8,7 @@ import { IOption, Menu } from '@models/menu';
   styleUrls: ['../menu-items.css', './menubar.component.css']
 })
 export class MenubarComponent {
-  activeMenu = 8
+  activeMenu = 2
 
   menuItems: Menu[] = [ 
     { id: 1, name: "File" },

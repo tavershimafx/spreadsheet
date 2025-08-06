@@ -1,4 +1,4 @@
-.items-group{
+.items-group {
     position: relative;
     display: grid;
     align-content: space-between;
@@ -7,15 +7,15 @@
     padding: 0 5px;
 }
 
-.items-group .cask{
+.items-group .cask {
     display: flex;
 }
 
-.items-group .align-half{
+.items-group .align-half {
     flex-grow: 1;
 }
 
-.group-title{
+.group-title {
     position: relative;
     bottom: 0;
     margin: 0;
@@ -23,21 +23,21 @@
     align-content: end;
 }
 
-.group-title p{
+.group-title p {
     display: inline-block;
     width: 90%;
     font-size: 11px;
     margin: 0;
 }
 
-.group-title i{
+.group-title i {
     position: relative;
     bottom: 0;
     right: 0;
     font-size: 8px;
 }
 
-.mni{
+.mni {
     display: inline-block;
     width: fit-content;
     height: 26px;
@@ -46,16 +46,16 @@
     border-radius: 5px;
 }
 
-span.mni i{
+span.mni i {
     vertical-align: middle;
     font-size: 16px;
 }
 
-.mni:hover{
+.mni:hover {
     background-color: var(--menu-hover);
 }
 
-.group-mni{
+.group-mni {
     display: inline-block;
     padding: 0;
     margin-right: 3px;
@@ -63,44 +63,44 @@ span.mni i{
     border: 1px solid transparent;
 }
 
-.group-mni:hover{
+.group-mni:hover {
     border: 1px solid var(--border-color);
     background-color: var(--menu-background);
 }
 
-.group-mni > span{
+.group-mni>span {
     padding: 5px;
     font-size: 12px;
 }
 
-.group-mni > span span{
+.group-mni>span span {
     margin-left: 3px;
 }
 
-.group-mni > span i{
+.group-mni>span i {
     vertical-align: middle;
 }
 
-.group-mni > span:hover,
-.group-mni > span:hover i{
+.group-mni>span:hover,
+.group-mni>span:hover i {
     background-color: var(--menu-hover);
 }
 
-.group-mni i.ms-Icon--ChevronDown{
+.group-mni i.ms-Icon--ChevronDown {
     padding: 8px 3px;
     font-size: 7px;
     border-left: 1px solid transparent;
 }
 
-.group-mni:hover i.ms-Icon--ChevronDown{
+.group-mni:hover i.ms-Icon--ChevronDown {
     border-left: 1px solid var(--border-color);
 }
 
-.group-mni i.ms-Icon--ChevronDown:hover{
+.group-mni i.ms-Icon--ChevronDown:hover {
     background-color: var(--menu-hover);
 }
 
-.mni-badge{
+.mni-badge {
     display: block;
     width: fit-content;
     padding: 3px 5px;
@@ -110,23 +110,27 @@ span.mni i{
     overflow: hidden;
 }
 
-.mni-badge:hover{
+.mni-badge>div:first-of-type:not(.dropmenu) {
+    display: inline-block;
+}
+
+.mni-badge:hover {
     background-color: var(--menu-hover);
 }
 
-.mni-badge i.ms-Icon{
+.mni-badge i.ms-Icon {
     font-size: 16px;
     vertical-align: middle;
     margin-right: 5px;
 }
 
 
-.mni-badge span i.ms-Icon{
+.mni-badge span i.ms-Icon {
     margin-left: 3px;
     font-size: 7px;
 }
 
-.mni-vertical{
+.mni-vertical {
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -136,28 +140,24 @@ span.mni i{
     cursor: default;
 }
 
-.mni-vertical:hover{
+.mni-vertical:hover {
     border: 1px solid var(--border-color);
 }
 
-.mni-vertical.nb:hover{
+.mni-vertical.nb:hover {
     background-color: var(--menu-hover);
     border: 1px solid transparent !important;
 }
 
-.mni-vertical:hover > i.ms-Icon{
-    border-bottom: 1px solid transparent;
-}
-
-.mni-vertical:hover > i.ms-Icon{
+.mni-vertical:hover>i.ms-Icon {
     border-bottom: 1px solid var(--border-color);
 }
 
-.mni-vertical.nb:hover > i.ms-Icon{
+.mni-vertical.nb:hover>i.ms-Icon {
     border-bottom: 1px solid transparent;
 }
 
-.mni-vertical > i.ms-Icon{
+.mni-vertical>i.ms-Icon {
     text-align: center;
     width: 100%;
     padding: 2px 5px;
@@ -165,44 +165,44 @@ span.mni i{
     border-bottom: 1px solid transparent;
 }
 
-.mni-vertical > i.ms-Icon:hover{
+.mni-vertical>i.ms-Icon:hover {
     background-color: var(--menu-hover);
 }
 
-.mni-vertical > div:first-of-type{
+.mni-vertical>div:first-of-type {
     padding: 0 5px;
     text-align: center;
 }
 
-.mni-vertical > div:not(.dropmenu){
+.mni-vertical>div:not(.dropmenu) {
     text-align: center;
 }
 
-.mni-vertical > div:first-of-type:hover{
+.mni-vertical>div:first-of-type:hover {
     background-color: var(--menu-hover);
 }
 
-.mni-vertical .txt{
-    display: block;
+.mni-vertical .txt {
+    display: inline-block;
     font-size: 12px;
     padding-top: 3px;
 }
 
-.mni-vertical.nb .txt{
-    display: inline !important;
+.mni-vertical.nb .txt {
+    /* display: inline !important; */
 }
 
-.mni-vertical > div:first-of-type i{
+.mni-vertical>div:first-of-type i {
     font-size: 7px;
     padding-bottom: 7px;
 }
 
-.mni-vertical.nb > div:first-of-type i{
+.mni-vertical.nb>div:first-of-type i {
     margin-left: 2px !important;
 }
 
-.dropmenu{
-    position: absolute;
+.dropmenu {
+    position: fixed;
     width: 200px;
     max-height: 90vh;
     overflow-y: auto;
@@ -214,13 +214,13 @@ span.mni i{
     z-index: 20;
 }
 
-.dropmenu .heading{
+.dropmenu .heading {
     font-family: "Roboto-Bold";
     font-size: 12px;
     padding: 7px 10px;
 }
 
-.dropmenu .item{
+.dropmenu .item {
     display: inline-grid;
     grid-auto-flow: column;
     grid-auto-columns: 23px auto;
@@ -228,7 +228,7 @@ span.mni i{
     width: 100%;
 }
 
-.dropmenu .block-item{
+.dropmenu .block-item {
     display: inline-grid;
     grid-auto-flow: column;
     align-items: center;
@@ -237,38 +237,932 @@ span.mni i{
     width: 100%;
 }
 
-.dropmenu .block-item > span:not(.mdm) i{
+.dropmenu .block-item>span:not(.mdm) i {
     font-size: 32px;
     vertical-align: middle;
 }
 
-.dropmenu .block-item span.md{
+.dropmenu .block-item span.md {
     font-family: "Roboto-Medium";
 }
 
-.dropmenu span.mdm i{
+.dropmenu span.mdm i {
     font-size: 8px;
     float: right;
 }
 
-.dropmenu .item:hover, .dropmenu .block-item:hover{
+.dropmenu .item:hover,
+.dropmenu .block-item:hover {
     background-color: var(--menu-hover);
 }
 
-.dropmenu .item > span i{
+.dropmenu .item>span i {
     font-size: 16px;
     vertical-align: middle;
 }
 
-.dropmenu .hr{
+.dropmenu .hr {
     width: 100%;
     border-bottom: 1px solid var(--border-color);
 }
 
-.dropmenu .item > span.hr{
+.dropmenu .item>span.hr {
     border-bottom: 1px solid var(--border-color);
 }
 
 .dropmenu .item:has(.hr) {
     padding: 0 10px;
 }
+
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width:1610px) {
+
+    .group-mni span:first-of-type>span.f-hide,
+    .mni-badge span.f-hide:first-of-type {
+        display: none;
+    }
+
+    .f-no-break{
+        display: none !important;
+    }
+    /*
+    when screen size reduces, convert mni-vertical to mni-badge
+    first reset its set styles above
+    */
+    .mni-vertical.f-hide {
+        position: unset;
+        display: unset;
+        vertical-align: unset;
+        border-radius: unset;
+        outline: none;
+        border: none;
+        cursor: default;
+    }
+
+    .mni-vertical.f-hide:hover {
+        border: unset;
+    }
+
+    .mni-vertical.f-hide.nb:hover {
+        border: none !important;
+    }
+
+    .mni-vertical.f-hide.cask>i.ms-Icon {
+        border-bottom: none;
+    }
+
+    .mni-vertical.f-hide.nb:hover>i.ms-Icon {
+        border-bottom: none;
+    }
+
+    .mni-vertical.f-hide > i.ms-Icon {
+        text-align: none;
+        width: unset;
+        padding: unset;
+        font-size: unset;
+        border-bottom: unset;
+    }
+
+    .mni-vertical.f-hide > i.ms-Icon:hover {
+        background-color: none;
+    }
+
+    .mni-vertical.f-hide > div:first-of-type {
+        padding: unset;
+        text-align: unset;
+    }
+
+    .mni-vertical.f-hide > div:not(.dropmenu) {
+        text-align: unset;
+    }
+
+    .mni-vertical.f-hide >div:first-of-type:hover {
+        background-color: none;
+    }
+
+    .mni-vertical.f-hide .txt {
+        display: unset;
+        font-size: unset;
+        padding-top: unset;
+    }
+
+    .mni-vertical.f-hide.nb .txt {
+        /* display: unset !important; */
+    }
+
+    .mni-vertical.f-hide >div:first-of-type i {
+        /* font-size: unset;
+        padding-bottom: unset; */
+    }
+
+    .mni-vertical.f-hide.nb>div:first-of-type i {
+        margin-left: unset !important;
+    }
+
+
+
+    /*
+    * Setting the new styles based on fourth-hide
+    */
+    .items-group .cask:has(.mni-vertical.f-hide) {
+        flex-direction: column;
+    }
+
+    .mni-vertical.f-hide {
+        display: block;
+        width: fit-content;
+        padding: 3px 5px;
+        border-radius: 5px;
+        margin-bottom: 2px;
+        font-size: 12px;
+        overflow: hidden;
+    }
+
+    .mni-vertical.f-hide>div:first-of-type:not(.dropmenu) {
+        display: inline-block;
+    }
+
+    .mni-vertical.f-hide:hover {
+        background-color: var(--menu-hover);
+    }
+
+    .mni-vertical.f-hide > i.ms-Icon {
+        font-size: 16px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .mni-vertical.f-hide span i.ms-Icon {
+        margin-left: 3px;
+        font-size: 7px;
+    }
+    /**
+    * End mni-conversion styles
+    */
+}
+
+@media screen and (max-width:1540px) {
+
+    .group-mni span:first-of-type>span.s-hide,
+    .mni-badge span.s-hide:first-of-type {
+        display: none;
+    }
+
+    .s-no-break{
+        display: none !important;
+    }
+
+    .s-show{
+        display: inherit !important;
+    }
+    
+    /*
+    when screen size reduces, convert mni-vertical to mni-badge
+    first reset its set styles above
+    */
+    .mni-vertical.s-hide {
+        position: unset;
+        display: unset;
+        vertical-align: unset;
+        border-radius: unset;
+        outline: none;
+        border: none;
+        cursor: default;
+    }
+
+    .mni-vertical.s-hide:hover {
+        border: unset;
+    }
+
+    .mni-vertical.s-hide.nb:hover {
+        border: none !important;
+    }
+
+    .mni-vertical.s-hide:hover>i.ms-Icon {
+        border-bottom: none;
+    }
+
+    .mni-vertical.s-hide.nb:hover>i.ms-Icon {
+        border-bottom: none;
+    }
+
+    .mni-vertical.s-hide > i.ms-Icon {
+        text-align: unset;
+        width: unset;
+        padding: unset;
+        font-size: unset;
+        border-bottom: unset;
+    }
+
+    .mni-vertical.s-hide > i.ms-Icon:hover {
+        background-color: none;
+    }
+
+    .mni-vertical.s-hide > div:first-of-type {
+        padding: unset;
+        text-align: unset;
+    }
+
+    .mni-vertical.s-hide > div:not(.dropmenu) {
+        text-align: unset;
+    }
+
+    .mni-vertical.s-hide >div:first-of-type:hover {
+        background-color: none;
+    }
+
+    .mni-vertical.s-hide .txt {
+        display: unset;
+        font-size: unset;
+        padding-top: unset;
+    }
+
+    .mni-vertical.s-hide.nb .txt {
+        /* display: unset !important; */
+    }
+
+    .mni-vertical.s-hide >div:first-of-type i {
+        font-size: unset;
+        padding-bottom: unset;
+    }
+
+    .mni-vertical.s-hide.nb>div:first-of-type i {
+        /* margin-left: unset !important; */
+    }
+
+
+
+    /*
+    * Setting the new styles based on fourth-hide
+    */
+    .items-group .cask:has(.mni-vertical.s-hide) {
+        /* flex-direction: column; */
+    }
+
+    .mni-vertical.s-hide {
+        display: block;
+        width: fit-content;
+        padding: 3px 5px;
+        border-radius: 5px;
+        margin-bottom: 2px;
+        font-size: 12px;
+        overflow: hidden;
+    }
+
+    .mni-vertical.s-hide>div:first-of-type:not(.dropmenu) {
+        display: inline-block;
+    }
+
+    .mni-vertical.s-hide:hover {
+        background-color: var(--menu-hover);
+    }
+
+    .mni-vertical.s-hide i.ms-Icon {
+        font-size: 16px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .mni-vertical.s-hide > div > span i.ms-Icon {
+        margin-left: 3px;
+        font-size: 7px;
+    }
+    /**
+    * End mni-conversion styles
+    */
+}
+
+@media screen and (max-width:1480px) {
+
+    .group-mni span:first-of-type>span.th-hide,
+    .mni-badge span.th-hide:first-of-type {
+        display: none;
+    }
+
+    /* .mni-badge span.th-hide:first-of-type, */
+    .group-mni > span:first-of-type:has(span.th-hide){
+        padding-right: 0 !important;
+    }
+
+    .th-no-break{
+        display: none !important;
+    }
+
+    /*
+    when screen size reduces, convert mni-vertical to mni-badge
+    first reset its set styles above
+    */
+    .mni-vertical.th-hide {
+        position: unset;
+        display: unset;
+        vertical-align: unset;
+        border-radius: unset;
+        outline: none;
+        border: none;
+        cursor: default;
+    }
+
+    .mni-vertical.th-hide:hover {
+        border: unset;
+    }
+
+    .mni-vertical.th-hide.nb:hover {
+        border: none !important;
+    }
+
+    .mni-vertical.th-hide:hover>i.ms-Icon {
+        border-bottom: none;
+    }
+
+    .mni-vertical.th-hide.nb:hover>i.ms-Icon {
+        border-bottom: none;
+    }
+
+    .mni-vertical.th-hide > i.ms-Icon {
+        text-align: unset;
+        width: unset;
+        padding: unset;
+        font-size: unset;
+        border-bottom: unset;
+    }
+
+    .mni-vertical.th-hide > i.ms-Icon:hover {
+        background-color: none;
+    }
+
+    .mni-vertical.th-hide > div:first-of-type {
+        padding: unset;
+        text-align: unset;
+    }
+
+    .mni-vertical.th-hide > div:not(.dropmenu) {
+        text-align: unset;
+    }
+
+    .mni-vertical.th-hide >div:first-of-type:hover {
+        background-color: none;
+    }
+
+    .mni-vertical.th-hide .txt {
+        display: unset;
+        font-size: unset;
+        padding-top: unset;
+    }
+
+    .mni-vertical.th-hide.nb .txt {
+        display: unset !important;
+    }
+
+    .mni-vertical.th-hide >div:first-of-type i {
+        font-size: unset;
+        padding-bottom: unset;
+    }
+
+    .mni-vertical.th-hide.nb>div:first-of-type i {
+        /* margin-left: unset !important; */
+    }
+
+
+
+    /*
+    * Setting the new styles based on fourth-hide
+    */
+    .items-group .cask:has(.mni-vertical.th-hide) {
+        flex-direction: column;
+    }
+
+    .mni-vertical.th-hide {
+        display: block;
+        width: fit-content;
+        padding: 3px 5px;
+        border-radius: 5px;
+        margin-bottom: 2px;
+        font-size: 12px;
+        overflow: hidden;
+    }
+
+    .mni-vertical.th-hide>div:first-of-type:not(.dropmenu) {
+        display: inline-block;
+    }
+
+    .mni-vertical.th-hide:hover {
+        background-color: var(--menu-hover);
+    }
+
+    .mni-vertical.th-hide i.ms-Icon {
+        font-size: 16px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .mni-vertical.th-hide > div > span i.ms-Icon {
+        margin-left: 3px;
+        font-size: 7px;
+    }
+    /**
+    * End mni-conversion styles
+    */
+}
+
+
+@media screen and (max-width:1360px) {
+
+    .fo-no-break{
+        display: none !important;
+    }
+
+    /*
+    when screen size reduces, convert mni-vertical to mni-badge
+    first reset its set styles above
+    */
+    .mni-vertical.fo-hide {
+        position: unset;
+        display: unset;
+        vertical-align: unset;
+        border-radius: unset;
+        outline: none;
+        border: none;
+        cursor: default;
+    }
+
+    .mni-vertical.fo-hide:hover {
+        border: unset;
+    }
+
+    .mni-vertical.fo-hide.nb:hover {
+        border: none !important;
+    }
+
+    .mni-vertical.fo-hide:hover>i.ms-Icon {
+        border-bottom: none;
+    }
+
+    .mni-vertical.fo-hide.nb:hover>i.ms-Icon {
+        border-bottom: none;
+    }
+
+    .mni-vertical.fo-hide > i.ms-Icon {
+        text-align: unset;
+        width: unset;
+        padding: unset;
+        font-size: unset;
+        border-bottom: unset;
+    }
+
+    .mni-vertical.fo-hide > i.ms-Icon:hover {
+        background-color: none;
+    }
+
+    .mni-vertical.fo-hide > div:first-of-type {
+        padding: unset;
+        text-align: unset;
+    }
+
+    .mni-vertical.fo-hide > div:not(.dropmenu) {
+        text-align: unset;
+    }
+
+    .mni-vertical.fo-hide >div:first-of-type:hover {
+        background-color: none;
+    }
+
+    .mni-vertical.fo-hide .txt {
+        display: unset;
+        font-size: unset;
+        padding-top: unset;
+    }
+
+    .mni-vertical.fo-hide.nb .txt {
+        display: unset !important;
+    }
+
+    .mni-vertical.fo-hide >div:first-of-type i {
+        font-size: unset;
+        padding-bottom: unset;
+    }
+
+    .mni-vertical.fo-hide.nb>div:first-of-type i {
+        /* margin-left: unset !important; */
+    }
+
+    /*
+    * Setting the new styles based on fourth-hide
+    */
+    .items-group .cask:has(.mni-vertical.fo-hide) {
+        flex-direction: column;
+    }
+
+    .mni-vertical.fo-hide {
+        display: block;
+        width: fit-content;
+        padding: 3px 5px;
+        border-radius: 5px;
+        margin-bottom: 2px;
+        font-size: 12px;
+        overflow: hidden;
+    }
+
+    .mni-vertical.fo-hide>div:first-of-type:not(.dropmenu) {
+        display: inline-block;
+    }
+
+    .mni-vertical.fo-hide:hover {
+        background-color: var(--menu-hover);
+    }
+
+    .mni-vertical.fo-hide i.ms-Icon {
+        font-size: 16px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .mni-vertical.fo-hide > div > span i.ms-Icon {
+        margin-left: 3px;
+        font-size: 7px;
+    }
+    /**
+    * End mni-conversion styles
+    */
+}
+
+
+@media screen and (max-width:1300px) {
+    
+    .fi-no-break, .group-title i {
+        display: none !important;
+    }
+    
+    /*
+    when screen size reduces, convert mni-vertical to mni-badge
+    first reset its set styles above
+    */
+    .mni-vertical.fi-hide {
+        position: unset;
+        display: unset;
+        vertical-align: unset;
+        border-radius: unset;
+        outline: none;
+        border: none;
+        cursor: default;
+    }
+
+    .mni-vertical.fi-hide:hover {
+        border: unset;
+    }
+
+    .mni-vertical.fi-hide.nb:hover {
+        border: none !important;
+    }
+
+    .mni-vertical.fi-hide:hover>i.ms-Icon {
+        border-bottom: none;
+    }
+
+    .mni-vertical.fi-hide.nb:hover>i.ms-Icon {
+        border-bottom: none;
+    }
+
+    .mni-vertical.fi-hide > i.ms-Icon {
+        text-align: unset;
+        width: unset;
+        padding: unset;
+        font-size: unset;
+        border-bottom: unset;
+    }
+
+    .mni-vertical.fi-hide > i.ms-Icon:hover {
+        background-color: none;
+    }
+
+    .mni-vertical.fi-hide > div:first-of-type {
+        padding: unset;
+        text-align: unset;
+    }
+
+    .mni-vertical.fi-hide > div:not(.dropmenu) {
+        text-align: unset;
+    }
+
+    .mni-vertical.fi-hide >div:first-of-type:hover {
+        background-color: none;
+    }
+
+    .mni-vertical.fi-hide .txt {
+        display: unset;
+        font-size: unset;
+        padding-top: unset;
+    }
+
+    .mni-vertical.fi-hide.nb .txt {
+        display: none !important;
+    }
+
+    .mni-vertical.fi-hide >div:first-of-type i {
+        /* font-size: unset;
+        padding-bottom: unset; */
+    }
+
+    .mni-vertical.fi-hide.nb>div:first-of-type i {
+        margin-left: unset !important;
+    }
+
+
+
+    /*
+    * Setting the new styles based on fourth-hide
+    */
+    .items-group .cask:has(.mni-vertical.fi-hide) {
+        flex-direction: row;
+    }
+
+    .mni-vertical.fi-hide {
+        display: block;
+        width: fit-content;
+        padding: 3px 5px;
+        border-radius: 5px;
+        margin-bottom: 2px;
+        font-size: 12px;
+        overflow: hidden;
+    }
+
+    .mni-vertical.fi-hide>div:first-of-type:not(.dropmenu) {
+        display: inline-block;
+    }
+
+    .mni-vertical.fi-hide:hover {
+        background-color: var(--menu-hover);
+    }
+
+    .mni-vertical.fi-hide i.ms-Icon {
+        font-size: 16px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .mni-vertical.fi-hide > span i.ms-Icon {
+        margin-left: 3px;
+        font-size: 7px;
+    }
+    /**
+    * End mni-conversion styles
+    */
+}
+
+
+@media screen and (max-width:1200px) {
+    .si-no-break {
+        display: none !important;
+    }
+
+    .mni-vertical.si-hide .txt,
+    .mni-vertical.si-hide.nb .txt {
+        display: none !important;
+    }
+
+    
+    /*
+    when screen size reduces, convert mni-vertical to mni-badge
+    first reset its set styles above
+    */
+    .mni-vertical.si-hide {
+        position: unset;
+        display: unset;
+        vertical-align: unset;
+        border-radius: unset;
+        outline: none;
+        border: none;
+        cursor: default;
+    }
+
+    .mni-vertical.si-hide:hover {
+        border: unset;
+    }
+
+    .mni-vertical.si-hide.nb:hover {
+        border: none !important;
+    }
+
+    .mni-vertical.si-hide:hover>i.ms-Icon {
+        border-bottom: none;
+    }
+
+    .mni-vertical.si-hide.nb:hover>i.ms-Icon {
+        border-bottom: none;
+    }
+
+    .mni-vertical.si-hide > i.ms-Icon {
+        text-align: unset;
+        width: unset;
+        padding: unset;
+        font-size: unset;
+        border-bottom: unset;
+    }
+
+    .mni-vertical.si-hide > i.ms-Icon:hover {
+        background-color: none;
+    }
+
+    .mni-vertical.si-hide > div:first-of-type {
+        padding: unset;
+        text-align: unset;
+    }
+
+    .mni-vertical.si-hide > div:not(.dropmenu) {
+        text-align: unset;
+    }
+
+    .mni-vertical.si-hide >div:first-of-type:hover {
+        background-color: none;
+    }
+
+    .mni-vertical.si-hide .txt {
+        display: unset;
+        font-size: unset;
+        padding-top: unset;
+    }
+
+    .mni-vertical.si-hide.nb .txt {
+        /* display: unset !important; */
+    }
+
+    .mni-vertical.si-hide >div:first-of-type i {
+        font-size: unset;
+        padding-bottom: unset;
+    }
+
+    .mni-vertical.si-hide.nb>div:first-of-type i {
+        /* margin-left: unset !important; */
+    }
+
+
+
+    /*
+    * Setting the new styles based on fourth-hide
+    */
+    .items-group .cask:has(.mni-vertical.si-hide) {
+        flex-direction: column;
+    }
+
+    .mni-vertical.si-hide {
+        display: block;
+        width: fit-content;
+        padding: 3px 5px;
+        border-radius: 5px;
+        margin-bottom: 2px;
+        font-size: 12px;
+        overflow: hidden;
+    }
+
+    .mni-vertical.si-hide>div:first-of-type:not(.dropmenu) {
+        display: inline-block;
+    }
+
+    .mni-vertical.si-hide:hover {
+        background-color: var(--menu-hover);
+    }
+
+    .mni-vertical.si-hide i.ms-Icon {
+        font-size: 16px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .mni-vertical.si-hide > div > span i.ms-Icon {
+        margin-left: 3px;
+        font-size: 7px;
+    }
+    /**
+    * End mni-conversion styles
+    */
+}
+
+@media screen and (max-width:1100px) {
+    .se-no-break {
+        display: none !important;
+    }
+
+    .mni-vertical.se-hide .txt,
+    .mni-vertical.se-hide.nb .txt {
+        display: none !important;
+    }
+
+    /*
+    when screen size reduces, convert mni-vertical to mni-badge
+    first reset its set styles above
+    */
+    .mni-vertical.se-hide {
+        position: unset;
+        display: unset;
+        vertical-align: unset;
+        border-radius: unset;
+        outline: none;
+        border: none;
+        cursor: default;
+    }
+
+    .mni-vertical.se-hide:hover {
+        border: unset;
+    }
+
+    .mni-vertical.se-hide.nb:hover {
+        border: none !important;
+    }
+
+    .mni-vertical.se-hide:hover>i.ms-Icon {
+        border-bottom: none;
+    }
+
+    .mni-vertical.se-hide.nb:hover>i.ms-Icon {
+        border-bottom: none;
+    }
+
+    .mni-vertical.se-hide > i.ms-Icon {
+        text-align: unset;
+        width: unset;
+        padding: unset;
+        font-size: unset;
+        border-bottom: unset;
+    }
+
+    .mni-vertical.se-hide > i.ms-Icon:hover {
+        background-color: none;
+    }
+
+    .mni-vertical.se-hide > div:first-of-type {
+        padding: unset;
+        text-align: unset;
+    }
+
+    .mni-vertical.se-hide > div:not(.dropmenu) {
+        text-align: unset;
+    }
+
+    .mni-vertical.se-hide >div:first-of-type:hover {
+        background-color: none;
+    }
+
+    .mni-vertical.se-hide .txt {
+        display: unset;
+        font-size: unset;
+        padding-top: unset;
+    }
+
+    .mni-vertical.se-hide.nb .txt {
+        /* display: unset !important; */
+    }
+
+    .mni-vertical.se-hide >div:first-of-type i {
+        font-size: unset;
+        padding-bottom: unset;
+    }
+
+    .mni-vertical.se-hide.nb>div:first-of-type i {
+        /* margin-left: unset !important; */
+    }
+
+
+
+    /*
+    * Setting the new styles based on fourth-hide
+    */
+    .items-group .cask:has(.mni-vertical.se-hide) {
+        flex-direction: column;
+    }
+
+    .mni-vertical.se-hide {
+        display: block;
+        width: fit-content;
+        padding: 3px 5px;
+        border-radius: 5px;
+        margin-bottom: 2px;
+        font-size: 12px;
+        overflow: hidden;
+    }
+
+    .mni-vertical.se-hide>div:first-of-type:not(.dropmenu) {
+        display: inline-block;
+    }
+
+    .mni-vertical.se-hide:hover {
+        background-color: var(--menu-hover);
+    }
+
+    .mni-vertical.se-hide i.ms-Icon {
+        font-size: 16px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .mni-vertical.se-hide > div > span i.ms-Icon {
+        margin-left: 3px;
+        font-size: 7px;
+    }
+    /**
+    * End mni-conversion styles
+    */
+}
+    

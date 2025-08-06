@@ -1,0 +1,5 @@
+@media screen and (max-width:1540px) {
+    .items-group > div.cask:has(.mni-vertical.s-hide){
+        flex-direction: column !important;
+    }
+}

@@ -2,3 +2,9 @@
     display: block !important;
     margin-bottom: 3px;
 }
+
+@media screen and (max-width:1360px) {
+    .group-title p{
+        width: 100%;
+    }
+}

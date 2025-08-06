@@ -24,3 +24,19 @@
     grid-auto-flow: row;
 }
 
+@media screen and (max-width:1200px) {
+    .items-group .cask:has(.mni-vertical.si-hide) {
+        flex-direction: row;
+    }
+
+    .items-group.window-items .cask .align-half .mni-vertical.si-hide .txt,
+    .items-group.window-items .cask .align-half .mni-vertical.si-hide.nb .txt {
+        display: inline-block !important;
+    }
+
+    .items-group.window-items .align-half:first-of-type > div:first-of-type{
+        grid-auto-flow: row;
+    }
+
+}
+

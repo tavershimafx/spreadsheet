@@ -1,3 +1,10 @@
 .cells-items .others{
     display: inline-block;
 }
+
+@media screen and (max-width:1300px) {
+    .items-group .cask:has(.mni-vertical.fi-hide) {
+        flex-wrap: wrap;
+        max-width: 200px;
+    }
+}

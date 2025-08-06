@@ -1,17 +1,21 @@
-import { Directive, ElementRef, HostListener, Input, OnInit } from "@angular/core";
+import { AfterViewInit, Directive, ElementRef, HostListener, Input, OnInit } from "@angular/core";
 
 @Directive({
     selector: "[dropmenu]"
 })
-export class DropMenuDirective implements OnInit {
+export class DropMenuDirective implements AfterViewInit {
 
     dropdown!: any
     constructor(private el: ElementRef){
         this.onblur = this.onblur.bind(this)
     }
     
-    ngOnInit(): void {
-        this.dropdown = this.el.nativeElement.parentElement.children[2]
+    ngAfterViewInit(): void {
+        if(this.el.nativeElement.parentElement.children[2].classList.contains("dropmenu")){
+            this.dropdown = this.el.nativeElement.parentElement.children[2]
+        }else{
+            this.dropdown = this.el.nativeElement.parentElement.children[3]
+        }
     }
 
     @HostListener("click") onClick(){

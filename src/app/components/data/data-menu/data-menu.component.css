@@ -3,3 +3,11 @@
     padding-right: 5px;
     border-right: 1px solid var(--border-color);
 }
+
+@media screen and (max-width:1540px) {
+    .items-group .cask:has(.mni-vertical.s-hide){
+        max-width: 100px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
