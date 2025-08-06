@@ -27,7 +27,16 @@ export class Workbook{
     }
 }
 
-class mouseDownProp{
+export class CellExpand{
+    mouseDownElement: any
+    mouseDownStartX?: number
+    mouseDownStartY?: number
+
+    mouseDownStartHeight?: number
+    mouseDownStartWidth?: number
+}
+
+class MouseDownProp{
     fromX?: number
     fromY?: number
 
@@ -48,7 +57,7 @@ export class Worksheet{
     highlightedRow: number = 0
     highlightedCol?: string
     hasMouseDown: boolean = false
-    mouseDownProps?: mouseDownProp
+    mouseDownProps?: MouseDownProp
 
     constructor (i: number){
         this.id = i
@@ -68,7 +77,7 @@ export class Worksheet{
         this.rows![id - 1].activate(cell)
         
         if(!this.mouseDownProps){
-            this.mouseDownProps = new mouseDownProp()
+            this.mouseDownProps = new MouseDownProp()
         }
         
         this.mouseDownProps.fromX = x
@@ -133,7 +142,7 @@ export class Worksheet{
 
     mouseDown(row: number, col: string, x: number, y: number){
         this.hasMouseDown = true
-        this.mouseDownProps = new mouseDownProp()
+        this.mouseDownProps = new MouseDownProp()
         this.mouseDownProps.fromRow = row
         this.mouseDownProps.fromCol = col
         this.mouseDownProps.fromX = x
@@ -144,6 +153,19 @@ export class Worksheet{
         //this.unhighlightCells()
         this.unhighlightRow()
         this.unhighlightCol()
+    }
+
+    getCellValue(row: number, cid: string): string{
+        let value = this.rows![row].cells.find(c => c.id == cid)?.value
+        return  value == undefined ? "" : value
+    }
+
+    setCellValue(row: number, cid: string, value: string){
+        console.log("row, col", row, cid)
+        //console.log("row, col", this.rows![row - 1].cells.find(c => c.id == cid))
+        if(this.rows![row - 1].cells.find(c => c.id == cid) != undefined){
+            this.rows![row - 1].cells.find(c => c.id == cid)!.value = value
+        }
     }
 
     private unhighlightRow(){

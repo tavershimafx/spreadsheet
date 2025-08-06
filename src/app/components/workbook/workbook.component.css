@@ -112,14 +112,23 @@ table thead .shard{
 }
 
 table thead .label{
+    background-color: var(--grey);
+    border-right: 1px solid var(--cell-border);
+}
+
+.col-head-content{
     font-family: "Roboto-Regular";
     font-weight: normal;
     text-align: center;
     padding: 5px;
-    background-color: var(--grey);
     text-transform: uppercase;
-    border-right: 1px solid var(--cell-border);
+    height: 100%;
+    width: 100%;
 }
+
+/* table thead .label:hover:not(:has(:hover)) {
+  cursor: col-resize;
+} */
 
 table, table head{
     user-select: none;
@@ -155,10 +164,15 @@ table tr td.hbg{
 }
 
 .row-head{
-    padding: 3px 5px;
-    text-align: center;
     border-bottom: 1px solid var(--border-color);
     background-color: var(--grey);
+}
+
+.row-head div{
+    height: 100%;
+    width: 100%;
+    padding: 3px 5px;
+    text-align: center;
     user-select: none;     
     -webkit-user-select: none;
     -moz-user-select: none;   
@@ -167,6 +181,7 @@ table tr td.hbg{
 
 .cell{
     border: 1px solid var(--cell-border);
+    overflow: hidden;
     /* border: 1px solid rgb(224, 224, 224)  ; */
 }
 
@@ -174,20 +189,22 @@ table tr td.hbg{
     border: 2px solid var(--dark-green);
 }
 
-.cell .cell input{
+/* .cell .cell input{
     outline: none;
     border: none;
     padding: 3px;
     height: 100%;
     width: 60px;
-}
+} */
 
 .cell .cell-data{
     padding: 3px;
     height: 100%;
-    width: 60px;
+    width: 100%;
+    min-width: 60px;
     overflow: hidden;   
     user-select: none;     
+    pointer-events: none;
     -webkit-user-select: none;
     -moz-user-select: none;   
     -ms-user-select: none;    
@@ -197,7 +214,6 @@ table tr td.hbg{
     position: absolute;
     border: 2px solid var(--dark-green);
     pointer-events: none;
-    background-color: #0000001a;
 }
 
 .v-lighter .sll{

@@ -396,7 +396,7 @@ span.mni i {
         margin-right: 5px;
     }
 
-    .mni-vertical.f-hide span i.ms-Icon {
+    .mni-vertical.f-hide > div > span i.ms-Icon {
         margin-left: 3px;
         font-size: 7px;
     }
